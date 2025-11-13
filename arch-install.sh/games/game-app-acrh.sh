@@ -42,6 +42,5 @@ echo "installing lutris"
 sudo pacman -S lutris --noconfirm   
 echo "lutris installed"
 
-
 echo "Game applications installed successfully "
 
