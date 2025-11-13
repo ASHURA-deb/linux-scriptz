@@ -2,7 +2,7 @@
 echo "Getting script ready....."
 echo "Updating system...."
 sudo apt update -y
-echo "installing browsers(chromium,firefox) for $USER"
+echo "installing browsers(chromium,firefox,brave-browser or chrome) for $USER"
 echo "installing chromium....."
 sudo apt install chromium-browser
 echo "Chromium installed"
