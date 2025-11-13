@@ -28,7 +28,7 @@ echo "vulkan for intel installed"
 
 sudo pacman -S dxvk vkd3d
 
-echo "Vulkan packages installed"
+echo "vulkan packages installed"
 
 echo "installing antimicrox"
 sudo pacman -S antimicrox --noconfirm
@@ -40,7 +40,7 @@ echo "steam installed"
 
 echo "installing lutris"
 sudo pacman -S lutris --noconfirm   
-echo "lustris installed"
+echo "lutris installed"
 
 echo "Game applications installed successfully "
 
