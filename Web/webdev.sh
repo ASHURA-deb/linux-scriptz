@@ -1,14 +1,14 @@
 #!/bin/bash
 echo "Hello $USER"
 echo "updating system"
-sudo apt update
+sudo apt update -y
 echo "Update finished"
 echo "Getting dev tools ready"
 echo "Installing vim"
-sudo apt install vim
+sudo apt install vim -y
 echo "Done"
 echo "installing git"
-sudo apt install git
+sudo apt install git -y
 echo "done"
 echo "installing node"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
@@ -16,21 +16,21 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 nvm install 22
 node -v 
 npm -v
-sudo apt install nodejs
-sudo ap install npm
+sudo apt install nodejs -y
+sudo apt install npm -y
 echo "Done"
 echo "Installing python"
-sudo apt install python3
-sudo apt install python3-pip
-sudo apt install python3-dev python3-venv build-essential
+sudo apt install python3 -y
+sudo apt install python3-pip -y
+sudo apt install python3-dev python3-venv build-essential -y
 sudo chown -R $USER:$USER ~/.local
 sudo rm /var/lib/apt/lists/lock
 sudo rm /var/cache/apt/archives/lock
 echo "Python has been installed"
 echo "Installing MySql"
 sudo dpkg -i mysql-apt-config_0.8.34-1_all.deb
-sudo apt-get update
-sudo apt-get install mysql-server
+sudo apt-get update -y
+sudo apt-get install mysql-server -y
 systemctl status mysql
 echo "Done"
 echo "Installing vs-code"
@@ -41,12 +41,12 @@ sudo sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/packages.micr
 snap install code
 echo "Done"
 echo "installing neovim"
-sudo apt install neovim
-
+sudo apt install neovim -y
+echo "Done"
 #Lazyvim config
 npm install tree-sitter-cli
-sudo apt install lazygit
-sudo apt install curl
+sudo apt install lazygit -y
+sudo apt install curl -y
 snap install ghostty --classic
 
 
