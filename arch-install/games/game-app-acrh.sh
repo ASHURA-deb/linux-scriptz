@@ -30,6 +30,16 @@ sudo pacman -S dxvk vkd3d
 
 echo "vulkan packages installed"
 
+echo "installing ludusavi for game save management"
+sudo pacman -S ludusavi --noconfirm
+echo "ludusavi installed"
+
+echo "installing rclone for cloud storage for ludusavi"
+sudo pacman -S rclone --noconfirm
+echo "rclone installed"
+
+echo "ludusavi installed"
+
 echo "installing antimicrox"
 sudo pacman -S antimicrox --noconfirm
 echo "antimicrox installed"
