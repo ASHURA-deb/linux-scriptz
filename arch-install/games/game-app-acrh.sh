@@ -52,6 +52,15 @@ echo "installing lutris"
 sudo pacman -S lutris --noconfirm   
 echo "lutris installed"
 
+echo "optional installation"
+
+echo "installing qbittorrent for game torrents"
+sudo pacman -S qbittorrent 
+echo "qbittorrent installed"
+
+echo "installing jdownloader2"
+yay -S jdownloader2
+echo "jdownloader2 installed"   
 
 echo "Game applications installed successfully "
 
