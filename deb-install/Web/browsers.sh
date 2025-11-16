@@ -25,6 +25,7 @@ echo "chrome installed successfully"
 
 
 echo "optional installation"
+
 echo "installing free download manager"
 wget https://dn3.freedownloadmanager.org/6/latest/freedownloadmanager.deb
 sudo apt install ./freedownloadmanager.deb
