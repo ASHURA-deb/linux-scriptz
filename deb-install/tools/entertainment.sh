@@ -8,7 +8,8 @@ echo "Enjoy da music"
 echo "Installing discord or custom discord client(vencord,legcord) for $USER"
 
 echo "installing official discord"
-sudo snap install discord
+wget -O discord.deb https://discord.com/api/download?platform=linux
+sudo apt install ./discord.deb
 echo "official discord installed"
 
 
