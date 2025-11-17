@@ -10,6 +10,14 @@ echo "installing htop"
 sudo apt install htop -y
 echo "Done"
 
+echo "Installing btop"
+sudo add-apt-repository ppa:bashtop-monitor/bashtop && sudo apt update && sudo apt install bashtop
+echo "Done"
+
+echo "Installing opensnitch"
+sudo apt install opensnitch
+echo "done"
+
 echo "Installing timeshift"
 sudo apt install timeshift -y
 echo "Done"
@@ -21,14 +29,6 @@ sudo apt-get update -y
 sudo apt-get install go-for-it -y
 echo "done"
 
-echo "installing safeeyes"
-    sudo add-apt-repository ppa:safeeyes-team/safeeyes
-    sudo apt update -y
-    sudo apt install safeeyes -y
-echo "done"
-
 echo "sudo apt install shutter"
 sudo apt-get install shutter -y
 echo "Done"
-
-

@@ -7,11 +7,11 @@ sudo apt update -y
 echo "Done"
 
 echo "Installing VLC  or mpv for $USER"
-sudo apt install vlc 
+sudo apt install vlc
 echo "Done, enjoy"
 
 echo "installing mpv"
-sudo apt install mpv 
+sudo apt install mpv
 echo "mpv installed"
 
 echo "Now installling OBS"
@@ -20,3 +20,5 @@ echo "installing OBS"
 sudo apt install obs-studio -y
 echo "Done Enjoy OBS"
 
+echo "installing media codecs"
+sudo apt install ubuntu-restricted-extras
