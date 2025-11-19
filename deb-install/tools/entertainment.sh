@@ -2,6 +2,7 @@
 echo "Hello, $USER"
 echo "Installing spotify"
 snap install spotify
+
 echo "adding spicetify"
 curl -fsSL https://gist.githubusercontent.com/themagicalmammal/f6f086f9c701924371e1d334c60c8562/raw/d331b26ef430ffa2887172552ce9bbf91df74f3e/spicetify.sh | sh
 echo "adding marketplace"
@@ -26,12 +27,3 @@ echo "legcord installed"
 echo "installing whatsapp"
 sudo npm install nativefier -g
 nativefier "https://web.whatsapp.com/" --name "WhatsAppQT"
-
-echo "installing steam"
-sudo add-apt-repository multiverse
-sudo apt update && sudo apt install steam
-echo "Done"
-
-echo "installing lutris"
-sudo add-apt-repository ppa:lutris-team/lutris
-sudo apt update && sudo apt install lutris

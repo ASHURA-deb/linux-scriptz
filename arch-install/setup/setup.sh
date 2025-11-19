@@ -27,3 +27,4 @@ echo "Installing recommended drivers"
 sudo pacman -S ntfs-3g --noconfirm
 echo "Recommended drivers installed"
 
+fastfetch
