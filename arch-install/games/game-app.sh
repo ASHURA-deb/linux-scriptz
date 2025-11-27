@@ -10,7 +10,7 @@ echo "wine installed"
 
 echo "installing gamemode"
 sudo pacman -S gamemode --noconfirm
-echo "gamemode installed"  
+echo "gamemode installed"
 
 echo "installing vulkan packages"
 
@@ -46,21 +46,21 @@ echo "antimicrox installed"
 
 echo "installing steam"
 sudo pacman -S steam --noconfirm
+
 echo "steam installed"
 
 echo "installing lutris"
-sudo pacman -S lutris --noconfirm   
+sudo pacman -S lutris --noconfirm
 echo "lutris installed"
 
 echo "optional installation"
 
 echo "installing qbittorrent for game torrents"
-sudo pacman -S qbittorrent 
+sudo pacman -S qbittorrent
 echo "qbittorrent installed"
 
 echo "installing jdownloader2"
 yay -S jdownloader2
-echo "jdownloader2 installed"   
+echo "jdownloader2 installed"
 
 echo "Game applications installed successfully "
-
