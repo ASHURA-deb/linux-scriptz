@@ -11,11 +11,16 @@ sudo apt install vim -y
 echo "Done"
 
 echo "Installing MySql"
-wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
-sudo dpkg -i mysql-apt-config_0.8.34-1_all.deb
-sudo apt-get update -y
-sudo apt-get install mysql-server -y
-systemctl status mysql
+echo "Oracle don't care about no linux and shii and also fuck oracle"
+echo "Load up that mariadb boi"
+echo "Installing MariaDB"
+sudo apt install mariadb-server mariadb-client
+echo "Securing installation"
+sudo mariadb-secure-installation
+echo "Starting"
+sudo systemctl start mariadb
+echo "Verifying installation"
+mariadb -u root -p 
 echo "Done"
 
 echo "Installing vs-code"
