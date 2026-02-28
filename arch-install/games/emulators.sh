@@ -15,3 +15,4 @@ sudo pacman -S flatpak
 
 echo "Installing RetroArch"
 sudo pacman -Sy retroarch
+echo "Installed RetroArch"
