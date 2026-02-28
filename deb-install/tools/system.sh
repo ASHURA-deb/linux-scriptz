@@ -6,12 +6,16 @@ echo "updating system"
 sudo apt update -y
 echo "done"
 
+echo "Installing pipewire"
+sudo apt install pipewire pipewire-pulse wireplumber.
+echo "Done"
+
 echo "installing htop"
 sudo apt install htop -y
 echo "Done"
 
 echo "Installing btop"
-sudo add-apt-repository ppa:bashtop-monitor/bashtop && sudo apt update && sudo apt install bashtop
+sudo apt update && sudo apt install btop
 echo "Done"
 
 echo "Installing Syncthing"
