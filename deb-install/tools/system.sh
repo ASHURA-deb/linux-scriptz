@@ -36,3 +36,7 @@ sudo apt-get install syncthing
 echo "Installing timeshift"
 sudo apt install timeshift -y
 echo "Done"
+
+echo "Installing Impala"
+cargo install impala 
+echo "Done installing impala"

@@ -43,3 +43,7 @@ sudo apt update
 sudo apt install pipx
 pipx ensurepath
 echo "Done"
+
+echo "Installing Cargo"
+curl https://sh.rustup.rs -sSf | sh
+echo "Done"
