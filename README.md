@@ -3,19 +3,11 @@
 
 <pre>
 linux-scriptz/
-├── arch-install/
-│   ├── games/
-│   │   └── game-app.sh
-│   ├── setup/
-│   │   ├── mount-ntfs.sh
-│   │   ├── setup.sh
-│   │   └── unmount-ntfs.sh
-│   └── web/
-│       └── browser.sh
-├── .
+.
 ├── README.md
 ├── arch-install
 │   ├── games
+│   │   ├── emulators.sh
 │   │   └── game-app.sh
 │   ├── setup
 │   │   ├── mount-ntfs.sh
@@ -81,6 +73,7 @@ linux-scriptz/
     │   ├── tools.sh
     │   └── tui.sh
     ├── games
+    │   ├── emulators.sh
     │   └── game-app.sh
     ├── setup
     │   ├── media.sh
@@ -90,6 +83,4 @@ linux-scriptz/
         ├── browsers.sh
         ├── other.sh
         └── system.sh
-├── .gitignore
-└── README.md
-</pre>
+        </pre>
