@@ -3,14 +3,22 @@ echo "Installing required game applications for $USER"
 
 echo "Getting script ready....."
 
-sudo apt install flatpak snapd -y
+sudo apt install flatpak 
+sudo apt install plasma-discover-backend-flatpak
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+sudo apt update
+sudo apt install snapd 
 echo "Flatpak and Snapd installed"
 
 echo "Updating system"
 sudo apt update && sudo apt upgrade -y
 
 echo "installing wine"
-sudo apt install wine64 -y
+sudo dpkg --add-architecture i386
+sudo apt update
+sudo apt install wine32
+sudo apt install wine64
 echo "Wine installed"
 
 echo "installing gameMode"
@@ -19,13 +27,13 @@ echo "GameMode installed"
 
 echo "Installing Vulkan packages"
 
-echo "for amd"
-sudo apt install mesa-vulkan-drivers vulkan-tools -y
-echo "Vulkan for AMD installed"
-
-echo "for nvidia"
-sudo apt install nvidia-driver nvidia-vulkan-icd -y
-echo "vulkan for nvidia installed"
+# echo "for amd"
+# sudo apt install mesa-vulkan-drivers vulkan-tools -y
+# echo "Vulkan for AMD installed"
+#
+# echo "for nvidia"
+# sudo apt install nvidia-driver nvidia-vulkan-icd -y
+# echo "vulkan for nvidia installed"
 
 echo "for intel"
 sudo apt install mesa-vulkan-drivers -y
@@ -46,13 +54,20 @@ echo "installing antimicrox  WARNING!!: Must have flatpak installed"
 flatpak install flathub io.github.antimicrox.antimicrox -y
 
 echo "installing steam"
-sudo apt install steam -y
+# sudo apt install steam -y
+sudo dpkg --add-architecture i386
+sudo apt update
+dpkg --print-foreign-architectures
+sudo apt install steam-installer -y
+apt-cache policy steam-installer
 echo "steam installed"
 
 
 echo "installing lutris"
-sudo add-apt-repository ppa:lutris-team/lutris -y
-sudo apt install lutris -y
+echo -e "Types: deb\nURIs: https://download.opensuse.org/repositories/home:/strycore:/lutris/Debian_13/\nSuites: ./\nComponents: \nSigned-By: /etc/apt/keyrings/lutris.gpg" | sudo tee /etc/apt/sources.list.d/lutris.sources > /dev/null
+wget -q -O- https://download.opensuse.org/repositories/home:/strycore:/lutris/Debian_13/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/lutris.gpg
+sudo apt update
+sudo apt install lutris
 echo "Lutris installed"
 
 echo "Optional installation"
