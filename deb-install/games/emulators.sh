@@ -12,12 +12,13 @@ sudo apt install plasma-discover-backend-flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 echo "Installing RetroArch"
-sudo add-apt-repository ppa:libretro/stable && sudo apt-get update && sudo apt-get install retroarch 
+flatpak install flathub org.libretro.RetroArch
 echo "Installed RetroArch"
 
 echo "Installing Duckstation"
 wget https://github.com/stenzek/duckstation/releases/download/latest/DuckStation-x64.AppImage
-chmod a+x DuckStation-x64.AppImage
+chmod +x DuckStation-x64.AppImage
+./DuckStation-x64.AppImage
 echo "Installed Duckstation"
 rm DuckStation-x64.AppImage
 
@@ -31,6 +32,16 @@ echo "Installing xemu"
 flatpak install flathub app.xemu.xemu
 echo "Installed xemu"
 
+echo "Installing Gamecube & Wii emulator"
+echo "Installing dolphin"
+flatpak install flathub org.DolphinEmu.dolphin-emu
+echo "Done"
+
+echo "Installing Wii-U Emulator"
+echo "Install cemu"
+flatpak install flathub info.cemu.Cemu
+echo "Done"
+
 echo "Installing Playstation 3 emulator"
 echo "Installing Rpcs3"
 echo "installing required stuff"
@@ -39,15 +50,5 @@ wget --content-disposition https://rpcs3.net/latest-linux-x64
 chmod a+x ./rpcs3-*_linux64.AppImage && ./rpcs3-*_linux64.AppImage
 echo "Installed Rpcs3"
 rm rpcs3-v0.0.39-18850-b30a20c2_linux64.AppImage
-
-echo "Installing Gamecube & Wii emulator"
-echo "Installing dolphin"
-flatpak install flathub org.DolphinEmu.dolphin-emu
-echo "Done"
-
-
-
-
-
 
 sudo reboot
