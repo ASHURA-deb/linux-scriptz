@@ -42,6 +42,11 @@ echo "Install cemu"
 flatpak install flathub info.cemu.Cemu
 echo "Done"
 
+echo "Installing 3ds emulator"
+echo "Installing azahar"
+flatpak install flathub org.azahar_emu.Azahar
+echo "Done"
+
 echo "Installing Playstation 3 emulator"
 echo "Installing Rpcs3"
 echo "installing required stuff"
